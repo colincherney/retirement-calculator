@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retirement Calculator</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-family: monospace;
+        font-size: 15px;
+      }
+      .input-form {
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        flex-wrap: wrap;
+        gap: 3px;
+      }
+
+      .input-box {
+        text-align: right;
+        height: 25px;
+        font-size: 15px;
+        width: 180px;
+      }
+      .left-button {
+        width: 93px;
+        height: 25px;
+        font-size: 15px;
+      }
+      .right-button {
+        width: 186px;
+        height: 25px;
+        font-size: 15px;
+      }
+      .summary-table {
+        padding: 20px;
+      }
+      .summary-table td {
+        padding: 5px;
+      }
+
+      .td-right {
+        text-align: left;
+      }
+      .td-left {
+        text-align: right;
+      }
+      .amortization-table {
+        text-align: right;
+        width: 400px;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Retirement Calculator</h1>
+    <form class="input-form">
+      <input type="text" class="input-box" placeholder="Starting Age" />
+      <input type="text" class="input-box" placeholder="Retirement Age" />
+      <input type="text" class="input-box" placeholder="Starting Salary" />
+      <input type="text" class="input-box" placeholder="Annual Savings (%)" />
+      <input type="text" class="input-box" placeholder="Annual Raise (%)" />
+      <input type="text" class="input-box" placeholder="Interest Rate (%)" />
+      <button class="left-button">Clear</button>
+      <button class="left-button">Defaults</button>
+      <button class="right-button">Make Me Rich!</button>
+    </form>
+    <table class="summary-table">
+      <tr>
+        <td class="td-left">40</td>
+        <td class="td-right">Years to Invest</td>
+      </tr>
+      <tr>
+        <td class="td-left">1,473,440</td>
+        <td class="td-right">Retirement Fund</td>
+      </tr>
+      <tr>
+        <td class="td-left">3,130,501</td>
+        <td class="td-right">Lifetime Salary</td>
+      </tr>
+      <tr>
+        <td class="td-left">313,050</td>
+        <td class="td-right">Total Saved</td>
+      </tr>
+      <tr>
+        <td class="td-left">1,160,390</td>
+        <td class="td-right">Earned Interest</td>
+      </tr>
+    </table>
+    <table class="amortization-table">
+      <tr>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Savings</th>
+        <th>Interest</th>
+        <th>Retirement</th>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>50,000</td>
+        <td>5,000</td>
+        <td>350</td>
+        <td>5,350</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>51,000</td>
+        <td>5,100</td>
+        <td>732</td>
+        <td>11,182</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>52,020</td>
+        <td>5,202</td>
+        <td>1,147</td>
+        <td>17,530</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>53,060</td>
+        <td>5,306</td>
+        <td>1,599</td>
+        <td>24,435</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>54,122</td>
+        <td>5,412</td>
+        <td>2,089</td>
+        <td>31,936</td>
+      </tr>
+    </table>
+  </body>
+</html>
