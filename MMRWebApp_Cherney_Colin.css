@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+/* Start Input Form Styling */
+.input-form {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.input-box {
+  text-align: right;
+  height: 25px;
+  font-size: 15px;
+  width: 180px;
+}
+.left-button {
+  width: 93px;
+  height: 25px;
+  font-size: 15px;
+}
+.right-button {
+  width: 186px;
+  height: 25px;
+  font-size: 15px;
+}
+/* End Input Form Styling */
+
+/* Start Summary Table Styling */
+.summary-table {
+  padding: 20px;
+}
+.summary-table td {
+  padding: 5px;
+}
+
+.td-right {
+  text-align: left;
+}
+.td-left {
+  text-align: right;
+}
+/* End Summary Table Styling */
+
+/* Start Amortization Table Styling */
+.amortization-table {
+  text-align: right;
+  width: 400px;
+  background-color: antiquewhite;
+}
+/* End Amortization Table Styling */
