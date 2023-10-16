@@ -47,7 +47,9 @@
         placeholder="Interest Rate (%)"
         id="interestRate"
       />
-      <button class="left-button" onclick="clearData()">Clear</button>
+      <button class="left-button" onclick="clearData();resetInput()">
+        Clear
+      </button>
       <button class="left-button">Defaults</button>
       <button class="right-button" onclick="calculateRetirement()">
         Make Me Rich!
@@ -56,7 +58,7 @@
     <!-- End Retirement Calculator Input Form -->
 
     <!-- Start Retirement Calculator Summary Table -->
-    <table class="summary-table">
+    <table class="summary-table" id="summary-table">
       <tr>
         <td class="td-left">40</td>
         <td class="td-right">Years to Invest</td>
