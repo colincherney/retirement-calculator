@@ -14,6 +14,18 @@ let yearsToInvest = 0,
   totalInterest = 0,
   totalSavings = 0;
 
+function resetDefaults() {
+  document.getElementById("startingAge").value = 25;
+  document.getElementById("retirementAge").value = 30;
+  document.getElementById("startingSalary").value = 50000;
+  document.getElementById("annualSavings").value = 10;
+  document.getElementById("annualRaise").value = 1;
+  document.getElementById("interestRate").value = 5;
+
+  calculateRetirement();
+  event.preventDefault();
+}
+
 function resetInput() {
   // Reset input fields
   document.getElementById("startingAge").value = "";
